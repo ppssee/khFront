@@ -101,6 +101,8 @@ ex)
 * action: 폼의 내용을 처리해줄 서버 프로그램을 지정.
 * target : action 속성에서 지정한 파일을 다른 창에서 열도록 함.
 * method: 사용자가 입력한 내용을 서버 쪽 프로그램으로 어떻게 넘길지 지정함.
+	* get 방식  : 입력했던 키값이 url에 노출됨.
+	* post 방식 : 입력했던 키값이 url에 노출되지 않음.
 * autocomplete : 폼의 자동 완성 기능
 
 ### 7-2. 폼 요소를 그룹으로 묶을 때
@@ -136,6 +138,7 @@ ex)
 * type = "text" | "password" | "url" | "email" | "tel" |<br>
          "checkbox" | "radio" | "submit" | "reset" | "button" 등등
 ```html
+ex) <input type="text" name="userId">    // name= 키, 입력값= 값
 ex) <input type="radio" value="넘겨줄 값" name="이름">
 ```
 
