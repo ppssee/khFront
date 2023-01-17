@@ -1,0 +1,167 @@
+#container{
+    width: 900px;
+    margin: 0 auto;
+}
+#header {
+    width: 100%;
+    height: 100px;
+}
+    #header-layer1{
+        height: 100%;
+        width: 20%;
+        float: left;
+    }
+        #image-logo{ 
+            width: 100%;
+            height: 100%;
+        }
+    #header-layer2{
+        height: 100%;
+        width: 80%;
+        background-color: gold;
+        float: left;
+    }
+        #image-mainlogo{
+            width: 100%;
+            height: 100%;
+        }
+#nav {
+    height: 50px;
+    width: 100%;
+}
+    #nav-ul{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+        #nav-ul li{
+        width: 25%;
+        text-align: center;
+        float: left;
+        background-color: #67ae1a;
+        }
+        #nav-ul a{
+        display: block;
+        height: 22px;
+        padding: 14px;
+        text-decoration: none;
+        }
+        #nav-ul li a:link, #nav-ul li a:visited {
+        color: white;
+        text-decoration: none;
+        }
+        #nav-ul li a:hover {
+        background-color:#000;
+        color:#fff;
+        }
+#main{
+    height: 500px;
+}
+    #main-layer1{
+        height: 100%;
+        width: 15%;
+        float: left;
+        padding-top: 10px;
+    }
+        #image-left{
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+    #main-layer2{
+        height: 100%;
+        width: 62%;
+        float: left;
+    }
+        #img-top{
+            width: 100%;
+            height: 50%;
+        }
+            #top-left{
+                height: 100%;
+                width: 50%;
+                float: left;
+            }
+            #top-right{
+                height: 100%;
+                width: 50%;
+                float: left;
+            }
+        #img-bottom{
+            width: 100%;
+            height: 50%;
+        }
+            #bottom-left{
+                height: 100%;
+                width: 50%;
+                float: left;
+            }
+            #bottom-right{
+                height: 100%;
+                width: 50%;
+                float: left;
+            }
+        .main-mig{
+            width: 95%;
+            height: 90%;
+            margin-left: 8px;
+        }
+        .img-caption{
+            text-align: center;
+            line-height: 0.5;
+        }
+
+
+    #main-layer3{
+        height: 100%;
+        width: 23%;
+        float: left;
+    }
+        #aside-login{
+            width: 100%;
+            height: 15%;
+            
+        }
+            table {
+                width: 100%;
+                height: 100%;
+                
+            }
+                
+                #login-btn{
+                    width: 50px;
+                    height: 45px;
+                    padding: 0px;
+                }
+                #text-area{
+                    height: 100%;
+                    
+                    text-align: center;
+                }
+                
+        #aside2{
+            width: 100%;
+            height: 60%;
+        }
+            #image-right{
+                height: 100%;
+                width: 100%;
+            }
+        #aisde3{
+            width: 100%;
+            height: 25%;
+        }
+            #image-chat{
+                height: 100%;
+                width: 100%;
+            }
+#footer{
+    width: 100%;
+    height: 100px;
+}
+    #image-footer{
+        height: 100%;
+        width: 100%;
+    }

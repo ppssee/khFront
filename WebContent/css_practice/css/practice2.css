@@ -1,0 +1,27 @@
+.container {
+    border : 1px solid #ccc;
+    
+    width: 640px;
+    padding-right: 10px;
+    margin : 50px auto;
+}
+#test-1 {
+    padding: 10px;
+    background-color: black;
+}
+#font-1 {
+    color: white;
+    font-weight: bolder;
+}
+.font-2{
+    color: red;
+}
+.font-3{
+    color: blue;
+}
+.test-2 {
+    text-align: center;
+}
+#font-4 {
+    font-weight: bold;
+}

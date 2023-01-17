@@ -1,0 +1,34 @@
+#container{
+    border: 1px solid black;
+}
+#header{
+    height: 150px;
+    background-color: darkslategrey;
+}
+#main{
+    height: 600px;
+    background-color: blanchedalmond;
+}
+    #main-layer1 {
+        width: 15%;
+        height: inherit;
+        background-color: cadetblue;
+        float: left;
+    }
+    #main-layer2 {
+        width: 60%;
+        height: inherit;
+        background-color: blueviolet;
+        float: left;
+    }
+    #main-layer3 {
+        width: 25%;
+        height: inherit;
+        background-color: lightpink;
+        float: left;
+    }
+#footer{
+    height: 150px;
+    background-color: cornflowerblue;
+}
+

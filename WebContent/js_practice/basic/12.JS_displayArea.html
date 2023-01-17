@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표시영역 변경하기</title>
+    <style>
+        fieldset{
+            text-align: center;
+            width: 400px;
+            background-color: #dbdbdb;
+        }
+        .box{
+            background-color: gold;
+            width: 450px;
+            height: 50px;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>JS 표시영역 변경하기</h1>
+    <fieldset>
+        <legend>검색할 항목을 선택하세요.</legend>
+        <input type="radio" name="category" value="title" onclick="showDiv('title');" id="title"><label for="title">제목</label>&nbsp; &nbsp; 
+        <input type="radio" name="category" value="date" onclick="showDiv('date');"  id="date"><label for="date">날짜</label>&nbsp; &nbsp; 
+        <input type="radio" name="category" value="writer" onclick="showDiv('writer');" id="writer"><label for="writer">작성자</label>&nbsp; &nbsp;
+    </fieldset>
+    <hr>
+    <div id="titleBox" class="box">
+        <form method="post" action="">
+            <label> 검색할 제목을 입력하세요 : </label>
+            <br> 
+            <input type="search" name="title" size="50"> &nbsp;
+            <input type="submit" value="검색">
+        </form>
+    </div>
+    
+    <div id="dateBox" class="box">
+        <form method="post" action="">
+            <label> 검색할 날짜를 선택하세요 : </label>
+            <br>
+            <input type="date" name="start"> - 
+            <input type="date" name="end"> &nbsp; 
+            <input type="submit" value="검색">
+        </form>
+    </div>
+    <div id="writerBox" class="box">
+        <form method="post" action="">
+            <label> 검색할 작성자 아이디를 입력하세요 : </label>
+            <br>
+            <input type="search" name="writer" size="25"> &nbsp; 
+            <input type="submit" value="검색">
+        </form>
+    </div>
+
+    <script>
+        var div1 = document.querySelector("#titleBox");
+        var div2 = document.querySelector("#dateBox");
+        var div3 = document.querySelector("#writerBox");
+        
+        var showDiv = function(val){
+            switch(val){
+                case 'title' : 
+                div1.style.display = 'block';
+                div2.style.display = 'none';
+                div3.style.display = 'none'; 
+                break;
+                case 'date' : 
+                div1.style.display = 'none';
+                div2.style.display = 'block';
+                div3.style.display = 'none'; 
+                break;
+                case 'writer' : 
+                div1.style.display = 'none';
+                div2.style.display = 'none';
+                div3.style.display = 'block'; 
+                break;
+            }
+        }
+
+    </script>
+    
+
+
+</body>
+</html>

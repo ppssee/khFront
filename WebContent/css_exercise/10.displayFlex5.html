@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display : flex part1</title>
+    <style>
+        .container{
+            width: 300px;
+            display: flex;
+            background-color: #eee;
+            border: 1px solid #222;
+            margin-bottom: 20px;
+            --flex-direction: row;
+            --justify-content: flex-start;
+            --align-items: center;
+            
+        }
+        .box {
+            background-color: #222;
+            margin: 5px;
+            padding: 5px 45px;
+        }
+        p {
+            color: #fff;
+            text-align: center;
+        }
+        #opt1{
+            flex-flow: wrap;
+        }
+        #opt2{
+            flex-flow: nowrap;
+            
+        }
+     
+    </style>
+</head>
+
+<!--
+display : flex;      컨테이너에 작성
+flex-direction: row;     가로,세로 방향 정하기
+
+justify-content: center; 가로축
+align-items: center;     세로축   
+
+align-self: flex-strt;    특정 값만 따로 설정 
+flex-flow: wrap           아이템들이 컨테이너 크기 초과시 다음 줄로 넘어가게 함.         
+-->
+
+<body>
+
+    <div class="container" id="opt1">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+        <div class="box">
+            <p>6</p>
+        </div>
+    </div>
+    <div class="container" id="opt2">
+        <div class="box">
+            <p>1</p>
+        </div>
+        <div class="box">
+            <p>2</p>
+        </div>
+        <div class="box">
+            <p>3</p>
+        </div>
+        <div class="box">
+            <p>4</p>
+        </div>
+        <div class="box">
+            <p>5</p>
+        </div>
+        <div class="box">
+            <p>6</p>
+        </div>
+    </div>
+
+</body>
+</html>

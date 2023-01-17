@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력한 값 출력하기 </title>
+    <style>
+        #area {
+            width: 400px;
+            height: 150px;
+            background: #ffff99;
+            border: 1px solid #6666ff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>입력한 값 출력 문제</h2>
+    <label>구매자 : </label>
+    <input type="text" placeholder="구매자의 이름을 입력하세요.">
+    <br>
+    <br>
+    <label>상품명 : </label>
+    <input type="text" id="pname" placeholder="구매 상품명을 입력하세요">
+    <br>
+    <br>
+    <label>가격 : </label>
+    <input type="text" name="price" placeholder="구매 가격을 입력하세요.">
+    <br>
+    <br>
+    <button onclick="printValue();">입력값 출력하기</button>
+    <br>
+    <br>
+    <div id="area"></div>
+
+    <script>
+
+        // var printValue = function(){
+        //     var inputTags = document.querySelectorAll("[type=text]");
+        //     inputTags[0].value;
+        //     var pname = document.querySelector("#pname").value; 
+        //     var price = document.querySelector("[name=price]").value;
+        //     var divTag = document.querySelector("#area");
+        //     divTag.innerHTML = "상품명 : " + pname;
+        //     console.log(inputTags[0].value);
+
+        // }
+
+        function printValue(){
+            var text = document.querySelectorAll("[type=text]");
+            var area = document.querySelector("#area");
+            area.innerHTML += "구매자 : " + text[0].value + "<br>";
+            area.innerHTML += "상품명 : " + text[1].value + "<br>";
+            area.innerHTML += "가격 : " + text[2].value + "<br>";                         
+            console.log(name);
+        }
+        
+
+    </script>
+
+</body>
+
+</html>

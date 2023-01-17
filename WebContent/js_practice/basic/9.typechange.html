@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 변경 실습</title>
+    <style>
+        div{
+            border: 1px solid black;
+            background-color: black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id ="div1"></div>
+    <input id = "color" type="color">
+    <button id="colorbutton" onclick="colorbutton()">변경</button>
+    <hr>
+    <hr>
+    <br><br><br><br><br><br>
+
+    <div id ="div2"></div>
+    <button onclick="halfsize()">50x50</button>
+    <button onclick="b()">원본</button>
+    <button onclick="c()">200x200</button>
+    <script>
+        var div1 = document.querySelector("#div1");
+        var color = document.querySelector("#color");
+        
+        function colorbutton(){
+            div1.style.backgroundColor = color.value;
+        }
+
+
+        var divTag = document.querySelector("#div2");
+
+        function halfsize(){
+            divTag.style.width = "50px";
+            divTag.style.height = "50px";
+            
+        }
+        function b(){
+            divTag.style.width = "100px";
+            divTag.style.height = "100px";
+            
+        }
+        function c(){
+            divTag.style.width = "200px";
+            divTag.style.height = "200px";
+            
+        }
+
+
+    </script>
+</body>
+</html>

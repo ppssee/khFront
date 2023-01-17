@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 만들기</title>
+</head>
+<body>
+    <h1>자동 테이블 만들기</h1>
+
+    <script>
+        document.write("<p>test</p>");
+        var row = prompt("테이블의 행의 갯수는?");
+        var column = prompt("테이블의 열의 갯수는?");
+        var a = 1;
+        
+        document.write("<table border = 1>");
+        for(var i = 0; i < row; i++){  
+          
+            document.write("<tr>");
+            for(var e = 0; e < column; e++){
+                document.write("<td>" + a + "</td>");
+                a++;
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+
+    </script>
+
+</body>
+</html>
+
+<!-- 입장객 몇명?
+한줄에 몇명씩? 
+자동 테이블 만들기-->

@@ -1,0 +1,51 @@
+#container {
+    border: 1px solid black;
+}
+#header{
+    height: 150px;
+    
+}
+    #header-layer1{
+        height: inherit;
+        width: 20%;
+        background-color: aqua;
+        float: left;
+    }
+    #header-layer2{
+        height: inherit;
+        width: 60%;
+        background-color:lime;
+        float: left;
+    }
+    #header-layer3{
+        height: inherit;
+        width: 20%;
+        background-color: aquamarine;
+        float: left;
+    }
+#main{
+    height: 600px;
+    background-color: blanchedalmond;
+}
+    #main-layer1{
+        width: 15%;
+        height: inherit;
+        background-color: cadetblue;
+        float: left;
+    }
+    #main-layer2{
+        width: 60%;
+        height: inherit;
+        background-color: blanchedalmond;
+        float: left;
+    }
+    #main-layer3{
+        width: 25%;
+        height: inherit;
+        background-color: wheat;
+        float: left;
+    }
+#footer{
+    height: 150px;
+    background-color: cornflowerblue;
+}
