@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ES6</title>
+</head>
+<body>
+    <h1>Javascrpit ES6</h1>
+    <p>변수의 호이스팅, 선언되지 않은 변수를 사용하더라도 자동으로 변수를 선언하는 현상</p>
+    <script>
+        
+        let calculator = (num1, num2) => num1+num2;   // 화살표함수, 매개변수 2개 있는
+        document.write("두 수의 합 : " + calculator(5,10) + "<br><br>");
+
+        const sayHelloToFriend = (friend) => {    // 화살표 함수 , 매개변수 1개 있는
+            document.write(friend + "안녕?");
+        };
+        sayHelloToFriend("일용자야 ");
+
+        let sayHi = () => "안녕하세요?";     // 화살표 함수, 리턴 생략 가능
+
+        const printMember = () => {         // 화살표 함수
+            console.log("화살표 함수로 변경해봄.");
+        }
+
+        const insertMember = function(){      // const에 함수 담기.
+            console.log("const로 선언한 변수에 초기화");
+        }
+
+        function exConst(){
+            const number = 1;  // 상수
+            console.log(number);
+            number = 2;
+            console.log(number);
+        }
+
+        function letForLoop(){     // let은 호이스팅 되지않음. 
+            let i = 5;
+            for(let i=1; i<5; i++){
+                console.log(i);
+            }
+            console.log(i);
+        }
+
+        function exLet(){
+            let number;             // let은 호이스팅 되지않음.
+            number = 2;
+            console.log(number);
+        }
+
+        function exForLoop(){
+            for(var i=1; i<5; i++){     // var i 가 호이스팅 됨.
+                console.log(i);
+            }
+            console.log(i);           // 5 출력됨.
+        }
+
+        function varHoisting(){
+            console.log(number);   // number가 선언 안돼있으므로 자동으로 선언함.
+            var number;
+            number = 1;
+        }
+    </script>
+</body>
+</html>

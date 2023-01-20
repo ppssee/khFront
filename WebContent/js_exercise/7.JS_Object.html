@@ -107,12 +107,19 @@
         dog.bark();
     }
     function jsobject4(){     // foreach 문 사용
-        var game = {};
-        game.title = "LOL";
-        game.price = "free";
-        game.language = "한국어";
-        game.supportsOS = "AnyPlatform";
-        game.service = true;
+        var game = {    // JSON 방식
+            "title" : "LOL",
+            "price" : "free",
+            "language" : "한국어",
+            "supportsOS" : "AnyPlatform",
+            "service" : true
+        }
+        // var game = {};
+        // game.title = "LOL";
+        // game.price = "free";
+        // game.language = "한국어";
+        // game.supportsOS = "AnyPlatform";
+        // game.service = true;
 
         var divTag4 = document.querySelector("#area-for");
         for(var keyword in game){            // for(자료형 변수 in 참조변수)
@@ -120,22 +127,39 @@
         }   
     }
     function jsobject6(){
-        var person = new Object();
-        person.name = "일용자";
-        person.hobby = "낚시,수영,코딩";
-        person.strengtht = "자바";
-        person.dream = "웹개발자";
-        person.toString = function(){
-            var str = "";
-            for(var keyword in person){
-                if(keyword !="toString")
-                str += keyword + " : " + person[keyword] + "<br>";
+        var person = {     // JSON 방식
+            "name" : "일용자",
+            "hobby" : "낚시,수영,코딩",
+            "strength" : "자바",
+            "dream" : "웹개발자",
+            "toString" : function(){
+                var str ="";
+                for(var keyword in person){
+                    if(keyword != "toString"){
+                        str+=keyword+ " : " + person[keyword] + "<br>";
+                    }
+                }
+                return str;
             }
-            return str;
+
         }
-        document.querySelector("#area6").innerHTML = person.toString();
-        delete(person.dream);     // 객체 제거 
-        document.querySelector("#area6").innerHTML = person.toString();
+
+        // var person = new Object();
+        // person.name = "일용자";
+        // person.hobby = "낚시,수영,코딩";
+        // person.strengtht = "자바";
+        // person.dream = "웹개발자";
+        // person.toString = function(){
+        //     var str = "";
+        //     for(var keyword in person){
+        //         if(keyword !="toString")
+        //         str += keyword + " : " + person[keyword] + "<br>";
+        //     }
+        //     return str;
+        // }
+        // document.querySelector("#area6").innerHTML = person.toString();
+        // delete(person.dream);     // 객체 제거 
+        // document.querySelector("#area6").innerHTML = person.toString();
     }
 
 

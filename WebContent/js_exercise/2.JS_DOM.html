@@ -87,7 +87,7 @@
     <p id="p22" name="pp">돔객체</p>
     <p id="p33" name="pp">자바스크립트</p>
 <script>
-/////////// 노드 연결 
+///////////// 노드 연결 
 document.querySelector("#textNodeBtn").onclick = function(){
     var element = document.createElement("span");       // 요소노드 생성
     var text = document.createTextNode("DIV 밑으로~");  // 텍스트노드 생성
@@ -101,7 +101,7 @@ document.querySelector("#imgNodeBtn").addEventListener("click", function(){
     imgElement.width = "150";
     document.querySelector("#area2").appendChild(imgElement);
 })
-// 노드 삭제
+////////////// 노드 삭제
 document.querySelector("#node-remove").onclick = function(){  
     var areaTag = document.querySelector("#area2");
     var imgTag = document.querySelector("div img");
