@@ -6,9 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jquery 조작 메소드</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <style>
-        table { border : 1px solid black}
-        th, td { border : 1px solid black}
+        table {
+            border: 1px solid black
+        }
+
+        th,
+        td {
+            border: 1px solid black
+        }
     </style>
 </head>
 
@@ -26,6 +33,22 @@
         </tr>
 
     </table>
+
+    <script>
+
+
+        function add() {
+            var name = $("[name=title]").val();
+            var content = $("[name=content]").val();
+            var owner = $("[name=owner]").val();
+            if(name != ""){
+                $("table").append("<tr><td>"+name+"</td><td>"+content+"</td><td>"+owner+"</td></tr>");
+                $("[name=title]").val("");
+                $("[name=content]").val("");
+                $("[name=owner]").val("");
+            }
+        }
+    </script>
 </body>
 
 </html>

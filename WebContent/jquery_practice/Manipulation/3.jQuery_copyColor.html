@@ -33,7 +33,7 @@
 
     <fieldset style="width:800px;  margin:30px">
         <legend>복사되는 공간</legend>
-        <div id="1th" style="background-color:blue;">
+        <div id="1th">
             
         </div>
         <div id="2th">
@@ -59,15 +59,20 @@
     
     <script>
         var color;
+
         $("#img1").on("click", function(){
-            color = $("#img1").attr("style");   // backgroudn-color:red;
+            color = $("#img1").css("background-color");   
         })
         $("#img2").on("click", function(){
-            color = $("#img2").attr("style");
+            color = $("#img2").css("background-color");   
         })
 
-        $("#1th")
-
+        $("div[id$=th").on("click", function(){
+            $(this).css("background-color", color);
+        })
+        $("#btn1").on("click", function(){
+            $("div[id$=th]").css("background-color", "white");
+        })
     </script>
 
 
